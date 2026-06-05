@@ -1,0 +1,107 @@
+:root {
+    --bs-primary: #663399;
+    --bs-primary-rgb: 182, 89, 172;
+    --bs-link-color: #663399;
+    --bs-link-hover-color: #4d2673;
+}
+
+.bg-primary {
+    background-color: #663399 !important;
+}
+
+.text-primary {
+    color: #663399 !important;
+}
+
+.view-resume-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 1.25rem;
+    height: 3.5rem;
+    background-color: #495057;
+    color: #fff;
+    border-radius: 2rem;
+    font-size: 1rem;
+    margin-right: 1.5rem;
+    text-decoration: none;
+}
+
+.download-resume-button:hover {
+    background-color: #663399;
+    color: #fff;
+}
+
+.social-icons {
+    display:flex;
+    align-items: center;
+}
+
+.social-icons .social-icon:last-child {
+    margin-right: 0;
+}
+
+.social-icons .social-icon:hover {
+    background-color: #bd5d38;
+}
+
+.project-image {
+    width: 500px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 8px;
+    flex-shrink: 0;
+}
+
+.table-wrapper {
+    width: 100%;
+    overflow-x: auto;
+}
+
+.skills-mobile {
+    display: none;
+}
+
+@media (max-width: 576px) {
+    .skills-desktop {
+        display: none;
+    }
+
+    .skills-mobile {
+        display: block;
+    }
+
+    .skills-mobile table {
+        width: 100%;
+        font-size: 0.9rem;
+    }
+
+    .skills-mobile th,
+    .skills-mobile td {
+        padding: 6px 8px;
+    }
+}
+
+#sideNav {
+    box-sizing: border-box;
+}
+
+a {
+    color: #663399;
+}
+
+a:hover {
+    color: #4d2673;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #000000;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
