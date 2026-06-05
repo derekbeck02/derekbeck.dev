@@ -82,6 +82,13 @@
     }
 }
 
+@media (max-width: 768px) {
+    .project-image {
+        width: 100%;
+        height: auto;
+    }
+}
+
 #sideNav {
     box-sizing: border-box;
 }
