@@ -49,7 +49,7 @@
 }
 
 .view-resume-button:hover {
-    background-color: #663399;
+    background-color: var(--primary-hover);
     color: #fff;
 }
 
@@ -63,7 +63,7 @@
 }
 
 .social-icons .social-icon:hover {
-    background-color: #663399;
+    background-color: var(--primary-hover);
     color: #fff;
 }
 
