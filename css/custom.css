@@ -1,16 +1,37 @@
 :root {
-    --bs-primary: #663399;
-    --bs-primary-rgb: 182, 89, 172;
-    --bs-link-color: #663399;
-    --bs-link-hover-color: #4d2673;
+    --primary-color: #8b5ce6;
+    --primary-hover: #BB86FC;
+    --background-color: #ffffff;
+    --text-color: #495057;
+    --heading-color: #343a40;
+    --card-color: #ffffff;
+    --table-border: #000000;
+}
+
+[data-theme="dark"] {
+    --primary-color: #A970FF;
+    --primary-hover: #D1A7FF;
+    --background-color: #121212;
+    --text-color: #E0E0E0;
+    --heading-color: #FFFFFF;
+    --card-color: #1e1e1e;
+    --table-border: #555555;
+}
+
+[data-theme="dark"] .project-image {
+    border: 1px solid #333;
+}
+
+[data-theme="dark"] body {
+    background-image: none;
 }
 
 .bg-primary {
-    background-color: #663399 !important;
+    background-color: var(--primary-color) !important;
 }
 
 .text-primary {
-    color: #663399 !important;
+    color: var(--primary-color) !important;
 }
 
 .view-resume-button {
@@ -27,7 +48,7 @@
     text-decoration: none;
 }
 
-.download-resume-button:hover {
+.view-resume-button:hover {
     background-color: #663399;
     color: #fff;
 }
@@ -42,7 +63,13 @@
 }
 
 .social-icons .social-icon:hover {
-    background-color: #bd5d38;
+    background-color: #663399;
+    color: #fff;
+}
+
+.nav-buttons {
+    display: flex;
+    gap: 0.5rem;
 }
 
 .project-image {
@@ -51,6 +78,10 @@
     object-fit: cover;
     border-radius: 8px;
     flex-shrink: 0;
+}
+
+.resume-section-content {
+    color: var(--text-color);
 }
 
 .table-wrapper {
@@ -89,16 +120,47 @@
     }
 }
 
+@media (max-width: 991px) {
+    .nav-buttons {
+        margin-left: auto;
+    }
+}
+
 #sideNav {
     box-sizing: border-box;
 }
 
+#themeToggle {
+    color: rgba(255,255,255,.9);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 56px;
+    min-width: 40px;
+}
+
+#themeToggle i,
+#themeToggle svg {
+    font-size: 1rem;
+    width: 1rem;
+    height: 1rem;
+}
+
 a {
-    color: #663399;
+    color: var(--primary-color);
 }
 
 a:hover {
-    color: #4d2673;
+    color: var(--primary-hover);
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: var(--heading-color);
 }
 
 table {
@@ -111,4 +173,14 @@ th, td {
     padding-bottom: 8px;
     padding-left: 10px;
     padding-right: 10px;
+}
+
+table,
+th,
+td {
+    border-color: var(--table-border);
+}
+
+hr {
+    border-color: rgba(255,255,255,.15);
 }
