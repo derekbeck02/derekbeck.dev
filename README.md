@@ -2,7 +2,7 @@
 
 ## About
 
-Personal portfolio website showcasing my education, technical skills, professional experience, and software devevlopment projects.
+Personal portfolio website showcasing my education, technical skills, professional experience, and software development projects.
 
 <img width="1613" height="700" alt="README_screenshot" src="https://github.com/user-attachments/assets/f9005e75-706c-488c-93fd-190dbf7687ff" />
 
