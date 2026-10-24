@@ -93,13 +93,11 @@
 }
 
 .project-image {
-    max-width: 100%;
-    width: 100%;
-    aspect-ratio: 5 / 3;
-    height: auto;
-    object-fit: cover;
-    border-radius: 10px;
     display: block;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    border-radius: 10px;
     border: none;
 }
 
@@ -371,14 +369,21 @@
 }
 
 #projects .resume-section-content>.d-flex>a {
-    flex: 0 0 500px;
+    flex: 0 1 500px;
     width: 500px;
-    height: 300px;
+    max-width: 100%;
+    min-width: 0;
+    height: fit-content;
     display: block;
     overflow: hidden;
     border: 1px solid var(--soft-border);
     border-radius: 10px;
     background-color: var(--card-color);
+}
+
+#projects .resume-section-content>.d-flex>.flex-grow-1 {
+    flex: 1 1 0;
+    min-width: 0;
 }
 
 #sideNav {
