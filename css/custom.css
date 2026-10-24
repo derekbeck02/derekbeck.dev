@@ -221,12 +221,6 @@
     }
 }
 
-@media (max-width: 576px) {
-    .skills-grid {
-        grid-template-columns: minmax(0, 1fr);
-    }
-}
-
 @media (max-width: 768px) {
     #projects .project-image {
         width: 100% !important;
@@ -302,6 +296,35 @@
         width: 100%;
         height: auto;
         object-fit: contain;
+    }
+}
+
+/* Two-column skills layout for tablets and larger phones */
+@media (min-width: 360px) and (max-width: 991px) {
+    .skills-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 0.75rem;
+    }
+
+    .skill-card {
+        padding: 0.85rem;
+        min-width: 0;
+    }
+
+    .skill-card h3 {
+        font-size: 1.25rem;
+    }
+
+    .skill-card li {
+        font-size: 0.9rem;
+        overflow-wrap: anywhere;
+    }
+}
+
+/* Single column for very narrow screens */
+@media (max-width: 359px) {
+    .skills-grid {
+        grid-template-columns: minmax(0, 1fr);
     }
 }
 
